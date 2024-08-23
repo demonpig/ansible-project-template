@@ -1,0 +1,9 @@
+---
+
+- name: Example Playbook
+  hosts: all
+  gather_facts: "{{ gather_facts | default(False) }}"
+
+  tasks:
+    - name: Example Task
+      ansible.builtin.ping:
